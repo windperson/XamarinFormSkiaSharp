@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormSkiaSharp.UWP", 
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XamarinFormSkiaSharp\XamarinFormSkiaSharp\XamarinFormSkiaSharp.projitems*{52cbab4c-937d-4ffa-89e9-da79e8e8a094}*SharedItemsImports = 4
 		XamarinFormSkiaSharp\XamarinFormSkiaSharp\XamarinFormSkiaSharp.projitems*{cfac6911-4f14-467a-af80-51efac6f3a90}*SharedItemsImports = 13
 		XamarinFormSkiaSharp\XamarinFormSkiaSharp\XamarinFormSkiaSharp.projitems*{db3e84e8-a0f1-4fb3-9a2a-756287bc2230}*SharedItemsImports = 4
 		XamarinFormSkiaSharp\XamarinFormSkiaSharp\XamarinFormSkiaSharp.projitems*{ff3ed8a6-ffc7-4414-910b-7416dd3a3c61}*SharedItemsImports = 4
