@@ -1,0 +1,11 @@
+[*]
+end_of_line = crlf
+
+[*.xml]
+indent_style = tab
+
+# CSharp code style settings:
+[*.cs]
+indent_style = tab
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion

@@ -10,12 +10,12 @@ using Xamarin.Forms;
 
 namespace XamarinFormSkiaSharp
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormSkiaSharp", "XamarinFormSkiaSharp\XamarinFormSkiaSharp\XamarinFormSkiaSharp.shproj", "{CFAC6911-4F14-467A-AF80-51EFAC6F3A90}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormSkiaSharp.iOS", "XamarinFormSkiaSharp\XamarinFormSkiaSharp.iOS\XamarinFormSkiaSharp.iOS.csproj", "{DB3E84E8-A0F1-4FB3-9A2A-756287BC2230}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormSkiaSharp.UWP", "XamarinFormSkiaSharp\XamarinFormSkiaSharp.UWP\XamarinFormSkiaSharp.UWP.csproj", "{52CBAB4C-937D-4FFA-89E9-DA79E8E8A094}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D84D4192-6F5B-4974-B57A-8F8335849BE5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
