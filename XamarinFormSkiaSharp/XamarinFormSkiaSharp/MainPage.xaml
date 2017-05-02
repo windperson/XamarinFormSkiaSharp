@@ -5,10 +5,10 @@
              xmlns:local="clr-namespace:XamarinFormSkiaSharp"
              x:Class="XamarinFormSkiaSharp.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <Grid>
+        <Label Text="Xamarin Forms Draw SkiaSharp!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <Grid>
         <skia:SKCanvasView PaintSurface="SKCanvasView_PaintSurface"/>
     </Grid>
 

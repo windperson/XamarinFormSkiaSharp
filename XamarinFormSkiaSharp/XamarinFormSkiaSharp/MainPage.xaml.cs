@@ -24,14 +24,21 @@ namespace XamarinFormSkiaSharp
             var canvas = surface.Canvas;
             canvas.Clear();
 
-            var circleFill = new SkiaSharp.SKPaint
+			var contaienr = sender as SKCanvasView;
+			if(contaienr == null) { return; }
+
+			var scale = (float)(e.Info.Width / contaienr.Width);
+			Console.WriteLine("Scale = {0}", scale);
+			canvas.Scale(scale);
+
+			var circleFill = new SkiaSharp.SKPaint
             {
                 IsAntialias = true,
-                Style = SKPaintStyle.Fill,
+                Style = SKPaintStyle.Stroke,
                 Color = SKColors.Blue
             };
 
-            canvas.DrawCircle(300, 200, 100, circleFill);
+            canvas.DrawCircle(100, 100, 100, circleFill);
 
         }
     }
