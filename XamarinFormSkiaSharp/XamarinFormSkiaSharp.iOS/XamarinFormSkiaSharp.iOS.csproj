@@ -53,8 +53,8 @@
     <MtouchSdkVersion>10.3</MtouchSdkVersion>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchProfiling>False</MtouchProfiling>
-    <MtouchFastDev>False</MtouchFastDev>
-    <MtouchNoSymbolStrip>False</MtouchNoSymbolStrip>
+    <MtouchFastDev>True</MtouchFastDev>
+    <MtouchNoSymbolStrip>True</MtouchNoSymbolStrip>
     <MtouchUseLlvm>False</MtouchUseLlvm>
     <MtouchUseThumb>False</MtouchUseThumb>
     <MtouchEnableBitcode>False</MtouchEnableBitcode>
