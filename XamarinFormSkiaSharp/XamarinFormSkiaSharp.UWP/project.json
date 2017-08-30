@@ -1,13 +1,13 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
-    "SkiaSharp": "1.58.0",
-    "SkiaSharp.Svg": "1.58.0",
-    "SkiaSharp.Views.Forms": "1.58.0",
-    "Xamarin.Forms": "2.3.4.247"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+    "SkiaSharp": "1.59.1",
+    "SkiaSharp.Svg": "1.59.0",
+    "SkiaSharp.Views.Forms": "1.59.1",
+    "Xamarin.Forms": "2.3.4.270"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.14393": {}
   },
   "runtimes": {
     "win10-arm": {},

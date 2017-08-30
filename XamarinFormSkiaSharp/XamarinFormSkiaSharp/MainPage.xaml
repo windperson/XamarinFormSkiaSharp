@@ -5,7 +5,12 @@
              xmlns:local="clr-namespace:XamarinFormSkiaSharp"
              x:Class="XamarinFormSkiaSharp.MainPage">
 
-    <Grid>
+    <Grid Margin="0,0,0,0">
+        <Grid.Margin>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="0,20,0,0"/>
+            </OnPlatform>
+        </Grid.Margin>
         <Label Text="Xamarin Forms Draw SkiaSharp!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
