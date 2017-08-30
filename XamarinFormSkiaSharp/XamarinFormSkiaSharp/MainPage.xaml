@@ -12,9 +12,8 @@
             </OnPlatform>
         </Grid.Margin>
         <Label Text="Xamarin Forms Draw SkiaSharp!" 
-           VerticalOptions="Center" 
            HorizontalOptions="Center" />
-        <skia:SKCanvasView PaintSurface="SKCanvasView_PaintSurface"/>
+        <skia:SKCanvasView PaintSurface="SKCanvasView_PaintSurface" EnableTouchEvents="True" Touch="SKCanvasView_Touch"/>
     </Grid>
 
 </ContentPage>

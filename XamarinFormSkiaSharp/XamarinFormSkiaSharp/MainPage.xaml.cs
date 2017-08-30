@@ -37,8 +37,10 @@ namespace XamarinFormSkiaSharp
 #endif
 			canvas.Scale(scale);
 
+	        var centerX = (float) contaienr.Width / 2;
+	        var centerY = (float) contaienr.Height / 2;
 
-			canvas.DrawCircle(100, 100, 100, new SKPaint
+			canvas.DrawCircle(centerX, centerY, 100, new SKPaint
 			{
 				IsAntialias = true,
 				Style = SKPaintStyle.Stroke,
@@ -46,7 +48,7 @@ namespace XamarinFormSkiaSharp
 				Color = SKColors.Blue
 			});
 
-			canvas.DrawCircle(100, 100, 80, new SKPaint
+			canvas.DrawCircle(centerX, centerY, 80, new SKPaint
 			{
 				IsAntialias = true,
 				Style = SKPaintStyle.Stroke,
@@ -54,7 +56,7 @@ namespace XamarinFormSkiaSharp
 				Color = SKColors.DarkRed
 			});
 
-			canvas.DrawCircle(100, 100, 50, new SKPaint
+			canvas.DrawCircle(centerX, centerY, 50, new SKPaint
 			{
 				IsAntialias = true,
 				Style = SKPaintStyle.Fill,
@@ -62,5 +64,11 @@ namespace XamarinFormSkiaSharp
 			});
 
         }
-    }
+
+	    private void SKCanvasView_Touch(object sender, SKTouchEventArgs e)
+	    {
+		    
+	    }
+
+	}
 }
