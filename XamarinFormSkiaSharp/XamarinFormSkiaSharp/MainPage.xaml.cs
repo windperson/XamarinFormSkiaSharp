@@ -67,8 +67,14 @@ namespace XamarinFormSkiaSharp
 
 	    private void SKCanvasView_Touch(object sender, SKTouchEventArgs e)
 	    {
-		    
-	    }
+#if DEBUG
+#if !WINDOWS_UWP
+			Console.WriteLine("Touch Type = {0}", e.ActionType);
+#else
+			System.Diagnostics.Debug.WriteLine("Touch Type = {0}", e.ActionType);
+#endif
+#endif
+		}
 
 	}
 }
