@@ -24,8 +24,7 @@ namespace XamarinFormSkiaSharp
             var canvas = surface.Canvas;
             canvas.Clear();
 
-			var contaienr = sender as SKCanvasView;
-			if(contaienr == null) { return; }
+	        if(!(sender is SKCanvasView contaienr)) { return; }
 
 			var scale = (float)(e.Info.Width / contaienr.Width);
 #if DEBUG
