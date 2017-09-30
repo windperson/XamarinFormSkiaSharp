@@ -10,21 +10,24 @@ using Xamarin.Forms;
 
 namespace XamarinFormSkiaSharp
 {
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+		}
 
-        private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
-        {
-            //clear SKCanvas first.
-            var surface = e.Surface;
-            var canvas = surface.Canvas;
-            canvas.Clear();
+		private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
+		{
+			//clear SKCanvas first.
+			var surface = e.Surface;
+			var canvas = surface.Canvas;
+			canvas.Clear();
 
-	        if(!(sender is SKCanvasView contaienr)) { return; }
+			if (!(sender is SKCanvasView contaienr))
+			{
+				return;
+			}
 
 			var scale = (float)(e.Info.Width / contaienr.Width);
 #if DEBUG
@@ -36,8 +39,8 @@ namespace XamarinFormSkiaSharp
 #endif
 			canvas.Scale(scale);
 
-	        var centerX = (float) contaienr.Width / 2;
-	        var centerY = (float) contaienr.Height / 2;
+			var centerX = (float)contaienr.Width / 2;
+			var centerY = (float)contaienr.Height / 2;
 
 			canvas.DrawCircle(centerX, centerY, 100, new SKPaint
 			{
@@ -62,10 +65,10 @@ namespace XamarinFormSkiaSharp
 				Color = SKColors.DarkCyan
 			});
 
-        }
+		}
 
-	    private void SKCanvasView_Touch(object sender, SKTouchEventArgs e)
-	    {
+		private void SKCanvasView_Touch(object sender, SKTouchEventArgs e)
+		{
 #if DEBUG
 #if !WINDOWS_UWP
 			Console.WriteLine("Touch Type = {0}", e.ActionType);
